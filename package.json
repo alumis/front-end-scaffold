@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "node ./node_modules/rimraf/bin.js ./dist",
-    "build": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.production.js --mode=production",
-    "build:development": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.development.js --mode=development",
-    "start": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.development.js --mode=development --watch"
+    "build": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.prod.js --mode=production",
+    "build:development": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.dev.js --mode=development",
+    "start": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.dev.js --mode=development --watch"
   },
   "repository": {
     "type": "git",
