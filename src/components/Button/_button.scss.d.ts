@@ -1,2 +1,2 @@
-  declare const cssClasses;
-  export default cssClasses;
+declare const cssClasses;
+export default cssClasses;
