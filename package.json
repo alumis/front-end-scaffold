@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "node ./node_modules/rimraf/bin.js ./dist",
     "build": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.prod.js --mode=production",
-    "build:development": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.dev.js --mode=development",
+    "build:dev": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.dev.js --mode=development",
+    "build:prod": "npm run build",
     "start": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.dev.js --mode=development --watch"
   },
   "repository": {
