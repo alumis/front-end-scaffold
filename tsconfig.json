@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es2018",
+        "module": "es2015",
+        "jsx": "preserve",
+        "jsxFactory": "createNode",
+        "strict": false,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "resolveJsonModule": true
+    }
+}
