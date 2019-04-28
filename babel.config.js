@@ -20,8 +20,8 @@ module.exports = function (api) {
 
     const plugins = [
         "@babel/proposal-class-properties",
-        
-        ["@babel/plugin-transform-react-jsx", { "pragma": "createNode" }]
+        ["@babel/plugin-transform-react-jsx", { "pragma": "createNode" }],
+        "@babel/plugin-syntax-dynamic-import"
     ];
 
     return {

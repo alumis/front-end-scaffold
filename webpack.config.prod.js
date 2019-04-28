@@ -64,7 +64,15 @@ module.exports = {
             title: "Alumis App",
             template: "./src/index.html",
             filename: "index.html",
-            hash: true
+            hash: true,
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            }
         }),
         new MiniCssExtractPlugin()
     ],

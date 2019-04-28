@@ -8,7 +8,7 @@
     "build": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.prod.js --mode=production",
     "build:dev": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.dev.js --mode=development",
     "build:prod": "npm run build",
-    "start": "node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.dev.js --mode=development --watch"
+    "start": "node ./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js --mode=development --watch"
   },
   "repository": {
     "type": "git",
@@ -21,18 +21,20 @@
   },
   "homepage": "https://github.com/alumis/front-end-scaffold#readme",
   "devDependencies": {
-    "@alumis/button": "^1.0.2",
+    "@alumis/button": "^1.0.3",
     "@alumis/cancellationtoken": "^1.0.4",
     "@alumis/observables": "^1.0.47",
-    "@alumis/observables-dom": "^1.0.53",
-    "@alumis/observables-i18n": "^1.0.6",
+    "@alumis/observables-dom": "^1.0.57",
+    "@alumis/observables-i18n": "^1.0.7",
     "@alumis/semaphore": "^1.0.1",
-    "@alumis/textinput": "^1.0.0",
-    "@alumis/theme": "^1.0.2",
+    "@alumis/spa": "^1.0.1",
+    "@alumis/textinput": "^1.0.1",
+    "@alumis/theme": "^1.0.5",
     "@alumis/transitionasync": "^1.0.3",
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-typescript": "^7.3.3",
@@ -49,6 +51,10 @@
     "style-loader": "^0.23.1",
     "terser-webpack-plugin": "^1.2.3",
     "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.1"
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "@alumis/utils": "^1.0.0"
   }
 }
